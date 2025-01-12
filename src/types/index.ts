@@ -67,8 +67,8 @@ export interface Data {
   rqUID: string;
   language: "TH" | "EN";
   transRef: string;
-  sendingBank: BankCode;
-  receivingBank: BankCode;
+  sendingBank: BankCode | "";
+  receivingBank: BankCode | "";
   transDate: string;
   transTime: string;
   transTimestamp: Date;
@@ -105,7 +105,7 @@ export type Proxy = {
 };
 
 export type Account = {
-  type: "BANKAC" | "TOKEN" | "DUMMY";
+  type: "BANKAC" | "TOKEN" | "DUMMY" | ""
   value: string;
 };
 

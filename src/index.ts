@@ -56,15 +56,26 @@ export default class SlipOk {
     const url = `${BASE_API_URL}${this.branchId}`;
     const headers = {
       "x-authorization": this.apiKey,
-      "Content-Type": "multipart/form-data",
     };
 
     try {
+      const formData = new FormData();
+      Object.entries(data).forEach(([key, value]) => {
+        if (value !== undefined) {
+          if (value instanceof File) {
+            formData.append(key, value);
+          } else {
+            formData.append(key, String(value));
+          }
+        }
+      });
+
       const response = await fetch(url, {
         method: "POST",
         headers,
-        body: JSON.stringify(data),
+        body: formData,
       }).then(async (res) => await res.json());
+
       if (response?.success && response?.data && !response?.code) {
         const { data } = response;
         return { success: true, data } as SlipResponseSuccess;
