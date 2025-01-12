@@ -2,6 +2,10 @@
 
 SlipOk SDK ช่วยให้คุณสามารถโต้ตอบกับ SlipOk API เพื่อเช็คโควต้าและสลิปได้
 
+![NPM Last Update](https://img.shields.io/npm/last-update/%40prakrit_m%2Fslipok-sdk)
+[![NPM Downloads](https://img.shields.io/npm/d18m/%40prakrit_m%2Fslipok-sdk)](https://www.npmjs.org/package/@prakrit_m/slipok-sdk)
+[![NPM version](https://img.shields.io/npm/v/@prakrit_m/slipok-sdk.svg?style=flat)](https://www.npmjs.org/package/@prakrit_m/slipok-sdk)
+
 ### ✨ Features
 
 - รองรับ TypeScript
@@ -140,5 +144,3 @@ type SlipResponseError = {
 > SDK นี้พัฒนาโดยบุคคลภายนอก ไม่ใช่ผลิตภัณฑ์อย่างเป็นทางการจาก SlipOk
 
 [ISC](LICENSE)
-
-
