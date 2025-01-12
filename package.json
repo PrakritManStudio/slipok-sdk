@@ -1,0 +1,38 @@
+{
+  "name": "@prakrit_m/slipok-sdk",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "ts-node example/test.ts",
+    "build": "tsup",
+    "build:run": "tsup && node dist/index.js",
+    "publish": "npm run build"
+  },
+  "author": "Prakrit M. <prakritmanstudio@gmail.com>",
+  "license": "ISC",
+  "keywords": [
+    "slipok",
+    "slipok-sdk",
+    "qrslip",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrakritManStudio/slipk-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PrakritManStudio/slipok-sdk/issues"
+  },
+  "homepage": "https://github.com/PrakritManStudio/slipok-sdk#readme",
+  "peerDependencies": {},
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {}
+}
