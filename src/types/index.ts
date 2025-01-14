@@ -61,7 +61,7 @@ export type SlipResponseError =
       };
     };
 
-export interface Data {
+export type Data = {
   success: string;
   message: string;
   rqUID: string;
@@ -83,7 +83,7 @@ export interface Data {
   ref2: string;
   ref3: string;
   toMerchantId: string;
-}
+};
 
 export type Sender = {
   displayName: string;
@@ -92,12 +92,12 @@ export type Sender = {
   account: Account;
 };
 
-export interface Receiver {
+export type Receiver = {
   displayName: string;
   name: string;
   proxy: Proxy;
   account: Account;
-}
+};
 
 export type Proxy = {
   type: "NATID" | "MSISDN" | "EWALLETID" | "EMAIL" | "BILLERID" | null;
@@ -105,7 +105,7 @@ export type Proxy = {
 };
 
 export type Account = {
-  type: "BANKAC" | "TOKEN" | "DUMMY" | ""
+  type: "BANKAC" | "TOKEN" | "DUMMY" | "";
   value: string;
 };
 
@@ -121,7 +121,7 @@ export type QuotaResponseError = {
   message: string;
 };
 
-type QuotaData = {
+export type QuotaData = {
   quota: number;
   specialQuota: number;
   overQuota: number;

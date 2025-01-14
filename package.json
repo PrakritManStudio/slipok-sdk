@@ -1,6 +1,7 @@
 {
   "name": "@prakrit_m/slipok-sdk",
-  "version": "1.0.3",
+  "version": "1.1.1",
+  "description": "ไลบรารีสำหรับตรวจสอบสลิปโอนเงินผ่าน SlipOK API - A TypeScript library for verifying Thai bank transfer slips using SlipOK API",
   "private": false,
   "type": "module",
   "main": "./dist/index.js",
@@ -15,14 +16,18 @@
   "author": "Prakrit M. <prakritmanstudio@gmail.com>",
   "license": "ISC",
   "keywords": [
-    "slipok",
-    "slipok-sdk",
+    "SlipOK",
     "qrslip",
+    "SlipVerify",
+    "SlipVerification",
     "typescript"
+  ],
+  "files": [
+    "dist"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PrakritManStudio/slipk-sdk.git"
+    "url": "git+https://github.com/PrakritManStudio/slipok-sdk.git"
   },
   "bugs": {
     "url": "https://github.com/PrakritManStudio/slipok-sdk/issues"
@@ -34,5 +39,8 @@
     "tsup": "^8.3.5",
     "typescript": "^5.7.3"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "engines": {
+    "node": ">=16.0.0"
+  }
 }
